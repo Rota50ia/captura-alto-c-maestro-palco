@@ -1,1255 +1,613 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>MAESTRO PALCO — Sistema para Músicos que Querem DOMINAR o Mercado</title>
-<meta name="description" content="Sistema agressivo para músicos ambiciosos: como acelerar sua carreira musical, conquistar mercado e gerar resultados exponenciais em 90 dias.">
-
-<!-- SEO — Canonical & Indexação -->
-<link rel="canonical" href="https://maestropalco.rota50ia.com/dominante">
-<meta name="robots" content="index, follow">
-<meta name="author" content="Edilson Morais">
-<meta name="theme-color" content="#C9A84C">
-
-<!-- Open Graph — Facebook, WhatsApp, LinkedIn -->
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://maestropalco.rota50ia.com/dominante">
-<meta property="og:title" content="Sistema para DOMINAR o Mercado Musical — MAESTRO PALCO">
-<meta property="og:description" content="Sistema agressivo para músicos ambiciosos: acelerar carreira, conquistar mercado e gerar resultados exponenciais em 90 dias.">
-<meta property="og:image" content="https://maestropalco.rota50ia.com/og-image-dominante.jpg">
-<meta property="og:locale" content="pt_BR">
-<meta property="og:site_name" content="MAESTRO PALCO">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-
-<!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '294131638634570');
-fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=294131638634570&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
-
-<!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-SXXB0S0NPL"></script>
-<script>
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag("js", new Date());
-gtag("config", "G-SXXB0S0NPL");
-
-// Google Ads Conversion Tracking
-gtag("config", "AW-CONVERSION_ID");
-
-// Evento específico por tipo DISC
-gtag("event", "page_view", {
-page_title: "MAESTRO PALCO - Tipo DOMINANTE (C)",
-personality_type: "C",
-content_category: "Musical Personality Landing"
-});
-</script>
-<!-- End Google Analytics -->
-
-<style>
-  /* ═══════════════════════════════════════════════
-     ATOMIC LAYER 0 — DESIGN TOKENS
-     Brad Frost: "Start with the atoms."
-     Filosofia visual: Podium Stage (Midnight + Gold)
-  ═══════════════════════════════════════════════ */
-  :root {
-    /* Midnight surface hierarchy */
-    --m-midnight-950: #141422;
-    --m-midnight-900: #1C1C2E;
-    --m-midnight-800: #23233A;
-    --m-midnight-700: #2D2D4A;
-
-    /* Gold accents */
-    --m-gold-500:     #C9A84C;
-    --m-gold-300:     #F0D080;
-    --m-gold-glow:    rgba(201, 168, 76, 0.18);
-    --m-gold-dim:     rgba(201, 168, 76, 0.08);
-
-    /* Slate text */
-    --m-slate-200:    #E2E8F0;
-    --m-slate-400:    #94A3B8;
-    --m-slate-600:    #475569;
-
-    /* Semantic */
-    --m-ink:          #0A0A14;
-    --m-danger:       #EF4444;
-    --m-danger-dim:   rgba(239, 68, 68, 0.12);
-    --m-success:      #10B981;
-    --m-success-dim:  rgba(16, 185, 129, 0.12);
-
-    /* Borders */
-    --border-faint:   rgba(255, 255, 255, 0.06);
-    --border-soft:    rgba(255, 255, 255, 0.10);
-    --border-gold:    rgba(201, 168, 76, 0.35);
-
-    /* Spacing */
-    --sp-1: 4px;   --sp-2: 8px;   --sp-3: 12px;  --sp-4: 16px;
-    --sp-5: 20px;  --sp-6: 24px;  --sp-8: 32px;  --sp-10: 40px;
-    --sp-12: 48px; --sp-16: 64px; --sp-20: 80px; --sp-24: 96px;
-
-    /* Typography */
-    --font-display: 'Montserrat', system-ui, sans-serif;
-    --font-body:    'Montserrat', system-ui, sans-serif;
-    --font-mono:    'JetBrains Mono', ui-monospace, monospace;
-
-    /* Radius */
-    --r-sm: 4px;  --r-md: 6px;  --r-lg: 10px;  --r-xl: 14px;
-
-    /* Container */
-    --container: 680px;
-  }
-
-  /* ═══════════════════════════════════════════════
-     RESET / BASE
-  ═══════════════════════════════════════════════ */
-  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-  html { scroll-behavior: smooth; }
-
-  body {
-    font-family: var(--font-body);
-    font-weight: 400;
-    font-size: 17px;
-    line-height: 1.65;
-    color: var(--m-slate-200);
-    background: var(--m-midnight-900);
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-rendering: optimizeLegibility;
-  }
-
-  .container {
-    max-width: var(--container);
-    margin: 0 auto;
-    padding: 0 var(--sp-6);
-  }
-
-  section { padding: var(--sp-20) 0; }
-
-  /* ═══════════════════════════════════════════════
-     TYPE SCALE — Montserrat 900 display
-  ═══════════════════════════════════════════════ */
-  h1, h2, h3, h4 {
-    font-family: var(--font-display);
-    font-weight: 900;
-    line-height: 1.1;
-    letter-spacing: -0.02em;
-    color: var(--m-slate-200);
-  }
-
-  h1 { font-size: clamp(40px, 7vw, 68px); }
-  h2 { font-size: clamp(28px, 4.5vw, 40px); margin-bottom: var(--sp-6); }
-  h3 { font-size: clamp(20px, 3vw, 26px); margin-bottom: var(--sp-4); }
-  h4 { font-size: 18px; font-weight: 700; margin-bottom: var(--sp-3); }
-
-  p { margin-bottom: var(--sp-4); }
-  p:last-child { margin-bottom: 0; }
-
-  a { color: var(--m-gold-300); text-decoration: none; }
-  strong { color: var(--m-gold-300); font-weight: 700; }
-
-  /* ═══════════════════════════════════════════════
-     ATOMS — BUTTON
-  ═══════════════════════════════════════════════ */
-  .btn-cta {
-    display: inline-block;
-    font-family: var(--font-display);
-    font-weight: 700;
-    font-size: 17px;
-    letter-spacing: 0.02em;
-    background: var(--m-gold-500);
-    color: var(--m-ink);
-    border: none;
-    border-radius: var(--r-sm);
-    padding: var(--sp-5) var(--sp-10);
-    cursor: pointer;
-    transition: transform 0.15s ease, background 0.15s ease, box-shadow 0.15s ease;
-    text-align: center;
-    text-transform: uppercase;
-    box-shadow: 0 4px 20px rgba(201, 168, 76, 0.25);
-  }
-  .btn-cta:hover {
-    background: var(--m-gold-300);
-    transform: translateY(-2px);
-    box-shadow: 0 6px 28px rgba(201, 168, 76, 0.35);
-  }
-  .btn-cta-lg {
-    font-size: 19px;
-    padding: var(--sp-6) var(--sp-12);
-    width: 100%;
-    max-width: 520px;
-  }
-
-  /* Divider */
-  .divider-gold {
-    width: 80px; height: 2px;
-    background: var(--m-gold-500);
-    margin: var(--sp-8) auto;
-    border: none;
-  }
-
-  /* ═══════════════════════════════════════════════
-     HERO
-  ═══════════════════════════════════════════════ */
-  .hero {
-    padding: var(--sp-24) 0 var(--sp-20);
-    background:
-      radial-gradient(ellipse at top, var(--m-gold-glow) 0%, transparent 55%),
-      var(--m-midnight-900);
-    border-bottom: 1px solid var(--border-faint);
-  }
-  .hero .container {
-    max-width: 1120px;
-  }
-  .hero-inner {
-    display: flex;
-    align-items: center;
-    gap: var(--sp-16);
-  }
-  .hero-text {
-    flex: 1 1 440px;
-    min-width: 0;
-  }
-  .hero-video {
-    flex: 0 0 520px;
-    width: 520px;
-  }
-  .hero-video-wrap {
-    position: relative;
-    width: 100%;
-    padding-top: 56.25%;
-    border-radius: var(--r-xl);
-    overflow: hidden;
-    background: var(--m-midnight-950);
-    border: 1px solid var(--border-gold);
-    box-shadow: 0 8px 48px rgba(201, 168, 76, 0.12);
-  }
-  .hero-video-wrap iframe {
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    border: none;
-  }
-  .hero .eyebrow {
-    font-family: var(--font-mono);
-    font-size: 12px;
-    font-weight: 500;
-    letter-spacing: 0.3em;
-    text-transform: uppercase;
-    color: var(--m-gold-500);
-    margin-bottom: var(--sp-6);
-  }
-  .hero h1 {
-    color: var(--m-slate-200);
-    margin-bottom: var(--sp-6);
-  }
-  .hero h1 .highlight {
-    color: var(--m-gold-300);
-    display: block;
-  }
-  .hero .subheadline {
-    font-size: 20px;
-    line-height: 1.5;
-    color: var(--m-slate-200);
-    margin-bottom: var(--sp-10);
-    font-weight: 500;
-  }
-  .hero .subheadline strong {
-    color: var(--m-slate-200);
-    font-weight: 700;
-  }
-  @media (max-width: 860px) {
-    .hero-inner {
-      flex-direction: column;
-      text-align: center;
-    }
-    .hero-video {
-      flex: none;
-      width: 100%;
-      max-width: 500px;
-      margin: 0 auto;
-    }
-    .hero .subheadline {
-      margin-left: auto;
-      margin-right: auto;
-      max-width: 90%;
-    }
-    .instructor-card {
-      flex-direction: column !important;
-      text-align: center;
-    }
-    .instructor-card img {
-      width: 180px !important;
-      min-width: 180px !important;
-      margin: 0 auto var(--sp-6);
-    }
-  }
-
-  /* ═══════════════════════════════════════════════
-     PROVOCAÇÃO
-  ═══════════════════════════════════════════════ */
-  .provocation {
-    background: var(--m-midnight-950);
-    border-left: 3px solid var(--m-red-500);
-  }
-  .provocation .intro {
-    font-size: 22px;
-    font-weight: 700;
-    color: var(--m-slate-200);
-    margin-bottom: var(--sp-8);
-    text-align: center;
-  }
-  .provoc-list {
-    list-style: none;
-    margin-bottom: var(--sp-8);
-  }
-  .provoc-list li {
-    position: relative;
-    padding: var(--sp-5) 0 var(--sp-5) var(--sp-10);
-    border-bottom: 1px solid var(--border-faint);
-    color: var(--m-slate-200);
-    font-size: 18px;
-    line-height: 1.6;
-    font-weight: 500;
-  }
-  .provoc-list li:last-child { border-bottom: none; }
-  .provoc-list li::before {
-    content: "🔥";
-    position: absolute;
-    left: 0;
-    top: var(--sp-5);
-    font-size: 18px;
-  }
-  .provocation .closing {
-    font-weight: 700;
-    color: var(--m-gold-300);
-    font-size: 20px;
-    text-align: center;
-    margin-top: var(--sp-8);
-  }
-
-  /* ═══════════════════════════════════════════════
-     PROBLEMA DOMINANTE
-  ═══════════════════════════════════════════════ */
-  .problem { text-align: left; }
-  .problem .lead {
-    font-size: 24px;
-    font-weight: 900;
-    color: var(--m-slate-200);
-    margin-bottom: var(--sp-6);
-    line-height: 1.3;
-  }
-  .problem .emphasis {
-    font-family: var(--font-display);
-    font-weight: 900;
-    color: var(--m-gold-300);
-    font-size: 22px;
-    display: block;
-    padding: var(--sp-4) 0;
-    line-height: 1.3;
-  }
-  .problem .emphasis-block {
-    margin: var(--sp-8) 0;
-    padding: var(--sp-8);
-    background: var(--m-midnight-800);
-    border-left: 4px solid var(--m-red-500);
-    border-radius: var(--r-md);
-    box-shadow: 0 4px 20px rgba(239, 68, 68, 0.1);
-  }
-  .problem .signoff {
-    font-weight: 700;
-    color: var(--m-slate-200);
-    font-size: 20px;
-    margin-top: var(--sp-8);
-    text-align: center;
-  }
-
-  /* ═══════════════════════════════════════════════
-     INSTRUTOR
-  ═══════════════════════════════════════════════ */
-  .instructor {
-    background: var(--m-midnight-950);
-  }
-  .instructor-card {
-    background: var(--m-midnight-800);
-    border: 1px solid var(--border-gold);
-    border-radius: var(--r-lg);
-    padding: var(--sp-10);
-    position: relative;
-    box-shadow: 0 8px 32px rgba(239, 68, 68, 0.1);
-  }
-  .instructor-card::before {
-    content: "";
-    position: absolute;
-    top: 0; left: 0; right: 0;
-    height: 4px;
-    background: linear-gradient(90deg, var(--m-red-500), var(--m-orange-500), var(--m-red-500));
-    border-radius: var(--r-lg) var(--r-lg) 0 0;
-  }
-  .instructor-card .name {
-    font-family: var(--font-display);
-    font-weight: 900;
-    font-size: 28px;
-    color: var(--m-gold-300);
-    margin-bottom: var(--sp-6);
-    letter-spacing: -0.01em;
-  }
-  .instructor-card .punch {
-    font-family: var(--font-display);
-    font-weight: 900;
-    font-size: 24px;
-    color: var(--m-slate-200);
-    margin: var(--sp-8) 0;
-    padding: var(--sp-6) 0;
-    border-top: 2px solid var(--border-gold);
-    border-bottom: 2px solid var(--border-gold);
-    text-align: center;
-  }
-
-  /* ═══════════════════════════════════════════════
-     O QUE É
-  ═══════════════════════════════════════════════ */
-  .what-is .box {
-    background: var(--m-midnight-800);
-    border-radius: var(--r-lg);
-    padding: var(--sp-10);
-    border: 1px solid var(--border-soft);
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
-  }
-  .what-is .not-list {
-    color: var(--m-slate-400);
-    margin: var(--sp-6) 0;
-  }
-  .what-is .not-list p {
-    padding-left: var(--sp-6);
-    position: relative;
-    margin-bottom: var(--sp-2);
-  }
-  .what-is .not-list p::before {
-    content: "×";
-    position: absolute;
-    left: 0;
-    color: var(--m-gold-500);
-    font-weight: 700;
-    font-size: 18px;
-  }
-  .what-is .stats {
-    display: flex;
-    flex-wrap: wrap;
-    gap: var(--sp-4);
-    margin-top: var(--sp-8);
-    padding-top: var(--sp-6);
-    border-top: 1px solid var(--border-faint);
-  }
-  .what-is .stat {
-    flex: 1 1 140px;
-    text-align: center;
-    padding: var(--sp-3);
-  }
-  .what-is .stat .num {
-    display: block;
-    font-family: var(--font-display);
-    font-weight: 900;
-    font-size: 36px;
-    color: var(--m-gold-300);
-    line-height: 1;
-    margin-bottom: var(--sp-2);
-  }
-  .what-is .stat .lbl {
-    font-family: var(--font-mono);
-    font-size: 11px;
-    color: var(--m-slate-400);
-    text-transform: uppercase;
-    letter-spacing: 0.15em;
-  }
-
-  /* ═══════════════════════════════════════════════
-     MÓDULOS AGRESSIVOS
-  ═══════════════════════════════════════════════ */
-  .modules { background: var(--m-midnight-950); }
-  .modules h2 { text-align: center; }
-  .modules .subtitle {
-    text-align: center;
-    color: var(--m-slate-400);
-    font-size: 18px;
-    margin-bottom: var(--sp-12);
-    font-weight: 500;
-  }
-
-  .module-card {
-    background: var(--m-midnight-800);
-    border: 1px solid var(--border-soft);
-    border-radius: var(--r-lg);
-    padding: var(--sp-8);
-    margin-bottom: var(--sp-6);
-    position: relative;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-  }
-  .module-card .badge {
-    display: inline-block;
-    font-family: var(--font-mono);
-    font-size: 11px;
-    font-weight: 500;
-    letter-spacing: 0.2em;
-    background: var(--m-red-500);
-    color: var(--m-slate-200);
-    padding: var(--sp-1) var(--sp-3);
-    border-radius: var(--r-sm);
-    margin-bottom: var(--sp-4);
-  }
-  .module-card .duration {
-    font-family: var(--font-mono);
-    font-size: 12px;
-    color: var(--m-slate-400);
-    margin-left: var(--sp-3);
-    letter-spacing: 0.05em;
-  }
-  .module-card h3 {
-    color: var(--m-slate-200);
-    margin-bottom: var(--sp-3);
-  }
-  .module-card .promise {
-    font-weight: 700;
-    color: var(--m-gold-300);
-    font-size: 17px;
-    margin-bottom: var(--sp-6);
-    font-style: italic;
-  }
-  .module-card ul {
-    list-style: none;
-    margin-bottom: var(--sp-6);
-  }
-  .module-card ul li {
-    position: relative;
-    padding: var(--sp-3) 0 var(--sp-3) var(--sp-6);
-    border-bottom: 1px solid var(--border-faint);
-    font-size: 16px;
-    line-height: 1.55;
-    color: var(--m-slate-200);
-  }
-  .module-card ul li:last-child { border-bottom: none; }
-  .module-card ul li::before {
-    content: "▶";
-    position: absolute;
-    left: 0;
-    top: 14px;
-    color: var(--m-gold-500);
-    font-size: 10px;
-  }
-  .prize {
-    background: var(--m-gold-dim);
-    border: 1px solid var(--border-gold);
-    border-radius: var(--r-md);
-    padding: var(--sp-4) var(--sp-5);
-    margin-top: var(--sp-4);
-    color: var(--m-slate-200);
-    font-size: 15px;
-  }
-  .prize strong {
-    color: var(--m-gold-300);
-    font-weight: 700;
-  }
-
-  /* ═══════════════════════════════════════════════
-     O QUE VOCÊ RECEBE
-  ═══════════════════════════════════════════════ */
-  .receive h2 { text-align: center; }
-  .receive ol {
-    list-style: none;
-    counter-reset: receive;
-    margin: var(--sp-8) 0;
-  }
-  .receive ol li {
-    counter-increment: receive;
-    position: relative;
-    padding: var(--sp-5) 0 var(--sp-5) var(--sp-12);
-    border-bottom: 1px solid var(--border-faint);
-    font-size: 17px;
-    line-height: 1.55;
-    font-weight: 500;
-  }
-  .receive ol li::before {
-    content: counter(receive, decimal-leading-zero);
-    position: absolute;
-    left: 0;
-    top: var(--sp-5);
-    font-family: var(--font-mono);
-    font-size: 14px;
-    font-weight: 500;
-    color: var(--m-gold-500);
-    letter-spacing: 0.1em;
-  }
-  .receive ol li::after {
-    content: "⚡";
-    position: absolute;
-    left: 36px;
-    top: 18px;
-    font-size: 16px;
-  }
-  .receive .footer-line {
-    text-align: center;
-    color: var(--m-slate-400);
-    font-style: italic;
-    margin-top: var(--sp-8);
-    font-size: 18px;
-  }
-
-  /* ═══════════════════════════════════════════════
-     PARA QUEM É / NÃO É
-  ═══════════════════════════════════════════════ */
-  .audience { background: var(--m-midnight-950); }
-  .audience h2 { text-align: center; }
-  .audience-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: var(--sp-6);
-    margin-top: var(--sp-8);
-  }
-  .audience-col {
-    background: var(--m-midnight-800);
-    border-radius: var(--r-lg);
-    padding: var(--sp-6);
-    border: 1px solid var(--border-soft);
-  }
-  .audience-col.positive { border-top: 3px solid var(--m-red-500); }
-  .audience-col.negative { border-top: 3px solid var(--m-slate-600); }
-  .audience-col h4 {
-    font-size: 14px;
-    letter-spacing: 0.15em;
-    text-transform: uppercase;
-    margin-bottom: var(--sp-5);
-    font-family: var(--font-mono);
-  }
-  .audience-col.positive h4 { color: var(--m-red-500); }
-  .audience-col.negative h4 { color: var(--m-slate-400); }
-  .audience-col ul { list-style: none; }
-  .audience-col ul li {
-    position: relative;
-    padding: var(--sp-3) 0 var(--sp-3) var(--sp-6);
-    border-bottom: 1px solid var(--border-faint);
-    font-size: 15px;
-    line-height: 1.5;
-  }
-  .audience-col ul li:last-child { border-bottom: none; }
-  .audience-col.positive ul li::before {
-    content: "⚡";
-    position: absolute;
-    left: 0;
-    top: var(--sp-3);
-    font-size: 14px;
-  }
-  .audience-col.negative ul li::before {
-    content: "×";
-    position: absolute;
-    left: 0;
-    top: var(--sp-3);
-    color: var(--m-slate-500);
-    font-weight: 700;
-    font-size: 18px;
-  }
-  @media (max-width: 620px) {
-    .audience-grid { grid-template-columns: 1fr; }
-  }
-
-  /* ═══════════════════════════════════════════════
-     OFERTA AGRESSIVA
-  ═══════════════════════════════════════════════ */
-  .offer .offer-box {
-    background: var(--m-midnight-800);
-    border-top: 4px solid var(--m-red-500);
-    border-radius: var(--r-lg);
-    padding: var(--sp-10);
-    text-align: center;
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
-  }
-  .offer .eyebrow {
-    font-family: var(--font-mono);
-    font-size: 12px;
-    letter-spacing: 0.3em;
-    text-transform: uppercase;
-    color: var(--m-gold-500);
-    margin-bottom: var(--sp-4);
-  }
-  .offer .title {
-    font-family: var(--font-display);
-    font-weight: 900;
-    font-size: 30px;
-    color: var(--m-slate-200);
-    margin-bottom: var(--sp-4);
-  }
-  .offer .price {
-    font-family: var(--font-display);
-    font-weight: 900;
-    font-size: 76px;
-    color: var(--m-gold-300);
-    line-height: 1;
-    margin: var(--sp-6) 0 var(--sp-2);
-    letter-spacing: -0.03em;
-  }
-  .offer .price-sub {
-    font-family: var(--font-mono);
-    font-size: 13px;
-    color: var(--m-slate-400);
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    margin-bottom: var(--sp-8);
-  }
-  .offer .includes {
-    text-align: left;
-    margin: var(--sp-8) auto;
-    max-width: 480px;
-    background: var(--m-midnight-950);
-    border-radius: var(--r-md);
-    padding: var(--sp-6);
-  }
-  .offer .includes-title {
-    font-family: var(--font-mono);
-    font-size: 11px;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    color: var(--m-slate-400);
-    margin-bottom: var(--sp-3);
-  }
-  .offer .includes ul { list-style: none; }
-  .offer .includes ul li {
-    padding: var(--sp-2) 0 var(--sp-2) var(--sp-6);
-    position: relative;
-    font-size: 15px;
-    color: var(--m-slate-200);
-  }
-  .offer .includes ul li::before {
-    content: "⚡";
-    position: absolute;
-    left: 0;
-    top: var(--sp-2);
-    font-size: 14px;
-  }
-  .offer .urgency {
-    background: var(--m-gold-dim);
-    border: 2px solid var(--border-gold);
-    border-radius: var(--r-md);
-    padding: var(--sp-6);
-    margin: var(--sp-8) 0;
-    text-align: left;
-  }
-  .offer .urgency .u-title {
-    font-family: var(--font-display);
-    font-weight: 900;
-    color: var(--m-gold-300);
-    font-size: 18px;
-    margin-bottom: var(--sp-3);
-    display: flex;
-    align-items: center;
-    gap: var(--sp-2);
-  }
-  .offer .urgency .u-title::before {
-    content: "🔥";
-    font-size: 20px;
-  }
-  .offer .urgency p {
-    font-size: 15px;
-    color: var(--m-slate-200);
-    line-height: 1.55;
-    font-weight: 500;
-  }
-  .offer .math {
-    font-size: 16px;
-    color: var(--m-slate-400);
-    font-style: italic;
-    margin-bottom: var(--sp-8);
-    padding: var(--sp-4) 0;
-    border-top: 1px solid var(--border-faint);
-    border-bottom: 1px solid var(--border-faint);
-  }
-  .offer .math strong { color: var(--m-slate-200); font-weight: 700; font-style: normal; }
-  .offer .cta-sub {
-    font-family: var(--font-mono);
-    font-size: 12px;
-    color: var(--m-slate-400);
-    margin-top: var(--sp-4);
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-  }
-
-  /* ═══════════════════════════════════════════════
-     FAQ (CSS-only accordion)
-  ═══════════════════════════════════════════════ */
-  .faq { background: var(--m-midnight-950); }
-  .faq h2 { text-align: center; }
-  .faq details {
-    background: var(--m-midnight-800);
-    border: 1px solid var(--border-soft);
-    border-radius: var(--r-md);
-    margin-bottom: var(--sp-3);
-    overflow: hidden;
-    transition: border-color 0.2s ease;
-  }
-  .faq details[open] {
-    border-color: var(--border-gold);
-  }
-  .faq summary {
-    cursor: pointer;
-    padding: var(--sp-5) var(--sp-6);
-    font-family: var(--font-display);
-    font-weight: 700;
-    font-size: 16px;
-    color: var(--m-slate-200);
-    list-style: none;
-    position: relative;
-    padding-right: var(--sp-12);
-    line-height: 1.4;
-  }
-  .faq summary::-webkit-details-marker { display: none; }
-  .faq summary::after {
-    content: "+";
-    position: absolute;
-    right: var(--sp-6);
-    top: 50%;
-    transform: translateY(-50%);
-    font-family: var(--font-display);
-    font-weight: 900;
-    font-size: 24px;
-    color: var(--m-gold-500);
-    transition: transform 0.2s ease;
-  }
-  .faq details[open] summary::after {
-    transform: translateY(-50%) rotate(45deg);
-  }
-  .faq details[open] summary { color: var(--m-red-300); }
-  .faq .faq-body {
-    padding: 0 var(--sp-6) var(--sp-6);
-    color: var(--m-slate-200);
-    font-size: 15px;
-    line-height: 1.65;
-    border-top: 1px solid var(--border-faint);
-    padding-top: var(--sp-5);
-  }
-
-  /* ═══════════════════════════════════════════════
-     CTA FINAL
-  ═══════════════════════════════════════════════ */
-  .final-cta {
-    background:
-      radial-gradient(ellipse at center, var(--m-gold-glow) 0%, transparent 60%),
-      var(--m-dark-950);
-    text-align: center;
-    padding: var(--sp-24) 0;
-    border-top: 1px solid var(--border-faint);
-  }
-  .final-cta .anchor {
-    font-family: var(--font-display);
-    font-weight: 900;
-    font-size: clamp(28px, 5vw, 44px);
-    line-height: 1.15;
-    color: var(--m-slate-200);
-    margin-bottom: var(--sp-4);
-    letter-spacing: -0.02em;
-  }
-  .final-cta .sub {
-    font-size: 22px;
-    color: var(--m-gold-300);
-    margin-bottom: var(--sp-10);
-    font-weight: 700;
-  }
-
-  /* ═══════════════════════════════════════════════
-     FOOTER
-  ═══════════════════════════════════════════════ */
-  footer {
-    background: var(--m-dark-900);
-    border-top: 1px solid var(--border-faint);
-    padding: var(--sp-10) 0;
-    text-align: center;
-  }
-  footer p {
-    font-family: var(--font-mono);
-    font-size: 13px;
-    color: var(--m-slate-600);
-    letter-spacing: 0.05em;
-    line-height: 1.6;
-  }
-
-  /* ═══════════════════════════════════════════════
-     RESPONSIVE REFINEMENTS
-  ═══════════════════════════════════════════════ */
-  @media (max-width: 600px) {
-    section { padding: var(--sp-16) 0; }
-    .hero { padding: var(--sp-20) 0 var(--sp-16); }
-    .instructor-card, .what-is .box, .module-card { padding: var(--sp-6); }
-    .offer .offer-box { padding: var(--sp-6); }
-    .offer .price { font-size: 60px; }
-    body { font-size: 16px; }
-  }
-</style>
-</head>
-
-<body>
-
-<!-- ═══════════════════════════════════════════════
-     HERO
-════════════════════════════════════════════════ -->
-<section class="hero">
-  <div class="container">
-    <div class="hero-inner">
-      <div class="hero-text">
-        <div class="eyebrow">MAESTRO PALCO · Para Dominantes</div>
-        <h1>
-          Você não quer só "tocar bem".
-          <span class="highlight">Você quer DOMINAR o mercado.</span>
-        </h1>
-        <p class="subheadline">
-          <strong>Sistema agressivo para músicos ambiciosos</strong> que querem <strong>acelerar a carreira</strong>, 
-          <strong>conquistar território</strong> e gerar <strong>resultados exponenciais</strong> em 90 dias.
-          <br><br>
-          <span style="color: var(--m-gold-300); font-weight: 700;">🔥 Método testado por +80 músicos que escolheram crescimento acelerado</span>
-        </p>
-        <a href="#oferta" class="btn-cta">Quero DOMINAR meu mercado agora</a>
-      </div>
-      <div class="hero-video">
-        <div class="hero-video-wrap">
-          <iframe src="https://player.vimeo.com/video/1185340463?badge=0&autopause=0&player_id=0&app_id=58479" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" title="MAESTRO PALCO — VSL Dominante"></iframe>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ═══════════════════════════════════════════════
-     PROVOCAÇÃO
-════════════════════════════════════════════════ -->
-<section class="provocation">
-  <div class="container">
-    <p class="intro">Se você é músico que quer <strong>CRESCIMENTO EXPONENCIAL</strong> e <strong>DOMÍNIO DE MERCADO</strong>, você já sabe:</p>
-    <ul class="provoc-list">
-      <li>Você não quer "apenas sobreviver" da música — você quer <strong>prosperar</strong> e ser referência.</li>
-      <li>Está cansado de ver colegas medíocres tendo mais sucesso que você por serem mais <strong>agressivos</strong>.</li>
-      <li>Sabe que tem potencial para estar no <strong>topo</strong>, mas precisa de estratégias que realmente funcionem.</li>
-      <li>Quer crescimento <strong>rápido e consistente</strong>, não "um dia quem sabe".</li>
-      <li>Tem coragem para tomar <strong>decisões ousadas</strong> e executar com intensidade.</li>
-      <li>Quer ser o músico que outros <strong>admiram e respeitam</strong> — o padrão da categoria.</li>
-    </ul>
-    <p class="closing">Se você quer ser <strong>LÍDER</strong>, não seguidor, este sistema é para você. <span style="color: var(--m-gold-300);">É hora de acelerar.</span></p>
-  </div>
-</section>
-
-<!-- ═══════════════════════════════════════════════
-     PROBLEMA DOMINANTE
-════════════════════════════════════════════════ -->
-<section class="problem">
-  <div class="container">
-    <h2>Mediocridade não é opção</h2>
-    <p class="lead">Você não nasceu para ser "mais um". Você nasceu para LIDERAR.</p>
-    <p>Como músico ambicioso, você vê talentos menores tendo resultados maiores. Vê pessoas menos preparadas ocupando os espaços que você deveria estar. Você sabe que tem potencial para muito mais, mas está preso em estratégias lentas e conservadoras.</p>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema do Estrategista Musical - MAESTRO PALCO</title>
+    <meta name="description" content="Domine os dados e estratégias avançadas para criar um negócio musical de alta performance e resultados previsíveis.">
     
-    <p><strong>O problema:</strong> você foi ensinado que música é "arte" e que "sucesso demais" é "vender a alma". Bullshit. Sucesso é competência + estratégia + execução agressiva.</p>
+    <!-- MAESTRO Design System -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Montserrat:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <style>
+        /* === MAESTRO DESIGN SYSTEM - TIPO C === */
+        :root {
+            /* MAESTRO Brand Colors - DARK THEME */
+            --m-midnight-900: #0A0A0B;
+            --m-midnight-800: #111113;
+            --m-midnight-700: #1C1C1F;
+            --m-midnight-600: #2C2C30;
+            --m-midnight-500: #3A3A3F;
+            --m-midnight-400: #48484D;
+            --m-midnight-300: #636366;
+            --m-midnight-200: #8E8E93;
+            --m-midnight-100: #C7C7CC;
+            
+            --m-gold-500: #D4A574;
+            --m-gold-400: #E1B885;
+            --m-gold-300: #EECB96;
+            --m-gold-200: #F6E5C8;
+            --m-gold-100: #FDF8F0;
+            
+            --m-white: #FFFFFF;
+            --m-off-white: #F2F2F7;
+            
+            /* MAESTRO Dark Surface Colors */
+            --surface-primary: #1C1C1F;
+            --surface-secondary: #2C2C30;
+            --surface-tertiary: #3A3A3F;
+            --surface-card: #2C2C30;
+            --surface-overlay: rgba(28, 28, 31, 0.95);
+            
+            /* MAESTRO PALCO - CORES ORIGINAIS */
+            --maestro-primary: #1E40AF;
+            --maestro-secondary: #3B82F6;
+            --maestro-accent: #60A5FA;
+            --maestro-light: #DBEAFE;
+            
+            /* Typography Scale */
+            --text-display: 72px;
+            --text-h1: 48px;
+            --text-h2: 36px;
+            --text-h3: 28px;
+            --text-h4: 24px;
+            --text-body-xl: 20px;
+            --text-body-lg: 18px;
+            --text-body-md: 16px;
+            
+            /* Spacing System */
+            --space-4: 16px;
+            --space-6: 24px;
+            --space-8: 32px;
+            --space-12: 48px;
+            --space-16: 64px;
+            --space-20: 80px;
+            
+            /* MAESTRO Dark Gradients */
+            --gradient-midnight: linear-gradient(135deg, var(--m-midnight-900) 0%, var(--m-midnight-700) 100%);
+            --gradient-surface: linear-gradient(135deg, var(--surface-primary) 0%, var(--surface-secondary) 100%);
+            --gradient-card: linear-gradient(135deg, var(--surface-card) 0%, var(--surface-tertiary) 100%);
+            --gradient-gold: linear-gradient(135deg, var(--m-gold-500) 0%, var(--m-gold-400) 100%);
+            --gradient-maestro: linear-gradient(135deg, var(--maestro-primary) 0%, var(--maestro-secondary) 100%);
+            --gradient-dark-overlay: linear-gradient(135deg, rgba(10, 10, 11, 0.8) 0%, rgba(28, 28, 31, 0.9) 100%);
+        }
 
-    <div class="emphasis-block">
-      <span class="emphasis">Por isso você assiste seus concorrentes crescerem mais rápido.</span>
-      <span class="emphasis">Por isso você fica frustrado vendo "menos talentosos" tendo mais reconhecimento.</span>
-      <span class="emphasis">Por isso você sente que está "perdendo tempo" com crescimento lento.</span>
-    </div>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-    <p class="signoff">MAESTRO PALCO te ensina a ACELERAR sem comprometer qualidade. É possível ser artista E dominante.</p>
-  </div>
-</section>
+        body {
+            font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.6;
+            color: var(--m-white);
+            background: var(--gradient-midnight);
+            overflow-x: hidden;
+            min-height: 100vh;
+        }
 
-<!-- ═══════════════════════════════════════════════
-     INSTRUTOR
-════════════════════════════════════════════════ -->
-<section class="instructor">
-  <div class="container">
-    <h2>Quem entende de crescimento acelerado</h2>
-    <div class="instructor-card" style="display:flex;gap:32px;align-items:flex-start;">
-      <img src="foto-edilson.png" alt="Edilson Morais no palco" style="width:220px;min-width:220px;border-radius:8px;object-fit:cover;flex-shrink:0;">
-      <div>
-        <p class="name">Meu nome é Edilson Morais.</p>
-        <p>Passei 15 anos estudando músicos que <strong>dominaram</strong> seus mercados. Não os "bonitinhos" que tocam bem — os que <strong>construíram impérios</strong>. Trabalhei na co-produção do <strong>Suzano Express</strong>, um projeto que não apenas durou, mas <strong>dominou</strong> seu nicho.</p>
-        <p><strong>A diferença:</strong> Eles têm um SISTEMA agressivo. Não dependem de "networking" ou "sorte". Eles identificam oportunidades, atacam com precisão, e escalam rapidamente.</p>
-        <p class="punch">Músicos dominantes não esperam oportunidades. Eles CRIAM oportunidades.</p>
-        <p>O MAESTRO PALCO é para você que quer <strong>liderar</strong> seu mercado, não apenas participar dele.</p>
-      </div>
-    </div>
-  </div>
-</section>
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 var(--space-6);
+        }
 
-<!-- ═══════════════════════════════════════════════
-     O QUE É
-════════════════════════════════════════════════ -->
-<section class="what-is">
-  <div class="container">
-    <h2>O que é o MAESTRO PALCO</h2>
-    <div class="box">
-      <p>MAESTRO PALCO é um <strong>sistema agressivo de 23 aulas</strong> que te entrega um plano de <strong>dominância de mercado em 90 dias</strong> — com estratégias de crescimento acelerado, posicionamento competitivo e execução de alto impacto.</p>
+        /* Header */
+        .header {
+            background: var(--gradient-midnight);
+            padding: var(--space-6) 0;
+            text-align: center;
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
 
-      <div class="not-list">
-        <p>Não é sobre "crescer devagar e sempre".</p>
-        <p>Não é sobre "esperar a vez chegar".</p>
-        <p>Não é sobre "ser humilde e o mercado reconhecer".</p>
-      </div>
+        .header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(45deg, transparent 30%, rgba(30, 64, 175, 0.1) 50%, transparent 70%);
+            animation: shimmer 3s ease-in-out infinite;
+        }
 
-      <p>É sobre construir uma <strong>máquina de dominância musical</strong> que te coloca no <strong>topo da cadeia alimentar</strong> do seu mercado em tempo recorde.</p>
+        @keyframes shimmer {
+            0% { transform: translateX(-100%); }
+            100% { transform: translateX(100%); }
+        }
 
-      <div class="stats">
-        <div class="stat"><span class="num">4</span><span class="lbl">Módulos agressivos</span></div>
-        <div class="stat"><span class="num">23</span><span class="lbl">Aulas intensivas</span></div>
-        <div class="stat"><span class="num">90</span><span class="lbl">Dias para dominar</span></div>
-        <div class="stat"><span class="num">HIGH</span><span class="lbl">Impact results</span></div>
-      </div>
-    </div>
-  </div>
-</section>
+        .logo {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 24px;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+            position: relative;
+            z-index: 2;
+        }
 
-<!-- ═══════════════════════════════════════════════
-     MÓDULOS
-════════════════════════════════════════════════ -->
-<section class="modules">
-  <div class="container">
-    <h2>Os 4 módulos para dominância total</h2>
-    <p class="subtitle">Cada módulo te coloca um degrau acima da concorrência. Execução intensa, resultados rápidos.</p>
+        .logo span {
+            color: var(--m-gold-400);
+        }
 
-    <!-- MÓDULO 1 -->
-    <div class="module-card">
-      <span class="badge">M1 · POSICIONAMENTO DOMINANTE</span>
-      <span class="duration">54 min intensivo</span>
-      <h3>Autoridade Competitiva</h3>
-      <p class="promise">Você sai sabendo como ser visto como LÍDER da categoria, não apenas "mais um bom músico".</p>
-      <ul>
-        <li><strong>Diferencial único agressivo:</strong> Como se posicionar de forma que a concorrência pareça amadora.</li>
-        <li><strong>Autoridade imediata:</strong> Técnicas para ser visto como referência mesmo sendo "novo" no mercado.</li>
-        <li><strong>Comunicação dominante:</strong> Como falar do seu trabalho de forma que as pessoas QUEIRAM contratar você.</li>
-        <li><strong>Presença de liderança:</strong> Como carregar a energia de quem está no controle, sempre.</li>
-      </ul>
-      <div class="prize">🏆 <strong>Dominância instantânea:</strong> Framework para ser visto como autoridade em qualquer ambiente musical.</div>
-    </div>
+        /* Hero Section */
+        .hero {
+            padding: var(--space-20) 0;
+            text-align: center;
+            background: var(--surface-overlay);
+            backdrop-filter: blur(20px);
+            position: relative;
+            border-bottom: 1px solid var(--m-midnight-600);
+        }
 
-    <!-- MÓDULO 2 -->
-    <div class="module-card">
-      <span class="badge">M2 · ESCALABILIDADE AGRESSIVA</span>
-      <span class="duration">69 min — sem piedade</span>
-      <h3>Crescimento Exponencial</h3>
-      <p class="promise">Você sai sabendo como multiplicar resultados rapidamente sem trabalhar proporcionalmente mais.</p>
-      <ul>
-        <li><strong>Precificação competitiva:</strong> Como cobrar 3-5x mais que a concorrência e ainda assim ser preferido.</li>
-        <li><strong>Leverage inteligente:</strong> Como usar sistemas para amplificar seu alcance sem se esgotar.</li>
-        <li><strong>Network estratégico:</strong> Como construir relacionamentos que abrem portas grandes, rapidamente.</li>
-        <li><strong>Múltiplas fontes de renda:</strong> Como criar 4-7 streams de receita conectadas ao seu core musical.</li>
-      </ul>
-      <div class="prize">🏆 <strong>Máquina de crescimento:</strong> Calculadora de escalabilidade + templates de propostas premium.</div>
-    </div>
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: var(--gradient-maestro);
+        }
 
-    <!-- MÓDULO 3 -->
-    <div class="module-card">
-      <span class="badge">M3 · EXECUÇÃO DE ALTO IMPACTO</span>
-      <span class="duration">68 min — foco total</span>
-      <h3>Sistemas de Eficiência</h3>
-      <p class="promise">Você sai com processos que geram máximo resultado com mínimo esforço desperdiçado.</p>
-      <ul>
-        <li><strong>Automação inteligente:</strong> Como usar tecnologia para trabalhar enquanto você dorme.</li>
-        <li><strong>Delegate to accelerate:</strong> O que terceirizar e como escolher pessoas certas rapidamente.</li>
-        <li><strong>Focus extremo:</strong> Como identificar e eliminar atividades que não movem a agulha.</li>
-        <li><strong>Feedback loops:</strong> Como otimizar estratégias em tempo real baseado em dados reais.</li>
-      </ul>
-      <div class="prize">🏆 <strong>Eficiência brutal:</strong> Checklist de otimização + scripts de automação prontos.</div>
-    </div>
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            background: var(--maestro-light);
+            color: var(--maestro-primary);
+            padding: var(--space-4) var(--space-6);
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 14px;
+            margin-bottom: var(--space-6);
+            border: 2px solid var(--maestro-primary);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
 
-    <!-- MÓDULO 4 -->
-    <div class="module-card">
-      <span class="badge">M4 · PLANO DE DOMINÂNCIA 90D</span>
-      <span class="duration">68 min — cronômetro ligado</span>
-      <h3>Execução Acelerada</h3>
-      <p class="promise">Você sai com cronograma detalhado para estar no topo do seu mercado em 90 dias.</p>
-      <ul>
-        <li><strong>Primeiros 30 dias:</strong> Ações de impacto imediato que já te colocam acima de 70% da concorrência.</li>
-        <li><strong>Days 31-60:</strong> Escalabilidade e consolidação de posição dominante.</li>
-        <li><strong>Days 61-90:</strong> Dominância total e preparação para o próximo nível.</li>
-        <li><strong>Contingency plans:</strong> Como ajustar estratégias quando variáveis mudam.</li>
-      </ul>
-      <div class="prize">🏆 <strong>Roadmap da dominância:</strong> Cronograma semanal + KPIs de acompanhamento.</div>
-    </div>
-  </div>
-</section>
+        .badge::before {
+            content: '🔵';
+            margin-right: var(--space-4);
+        }
 
-<!-- ═══════════════════════════════════════════════
-     O QUE VOCÊ RECEBE
-════════════════════════════════════════════════ -->
-<section class="receive">
-  <div class="container">
-    <h2>O que você recebe para dominar seu mercado</h2>
-    <ol>
-      <li>Acesso às 23 aulas intensivas (aproximadamente 5 horas de conteúdo agressivo)</li>
-      <li>PDF "Plano de Dominância" — roadmap completo para 90 dias</li>
-      <li>Arsenal de Estratégias Competitivas — táticas para superar concorrência</li>
-      <li>Calculadora de Escalabilidade — pricing e growth hacking</li>
-      <li>50 Templates de Alto Impacto — propostas, pitches e apresentações</li>
-      <li>Scripts de Automação — sistemas que trabalham por você</li>
-    </ol>
-    <p class="footer-line">Tudo projetado para resultados máximos em tempo mínimo.</p>
-    <div style="text-align: center; margin-top: var(--sp-8);">
-      <a href="#oferta" class="btn-cta">Quero ACELERAR minha carreira agora</a>
-    </div>
-  </div>
-</section>
+        .hero h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            font-weight: 800;
+            color: var(--m-white);
+            margin-bottom: var(--space-6);
+            line-height: 1.1;
+            letter-spacing: -1px;
+        }
 
-<!-- ═══════════════════════════════════════════════
-     PARA QUEM É / NÃO É
-════════════════════════════════════════════════ -->
-<section class="audience">
-  <div class="container">
-    <h2>Para quem é — e para quem não é</h2>
-    <div class="audience-grid">
-      <div class="audience-col positive">
-        <h4>Para quem é</h4>
-        <ul>
-          <li>Você quer ser LÍDER do seu mercado, não apenas participante.</li>
-          <li>Você tem coragem para tomar decisões ousadas e executar com intensidade.</li>
-          <li>Você está disposto a sair da zona de conforto para ter resultados excepcionais.</li>
-          <li>Você quer crescimento acelerado e está preparado para a responsabilidade que vem com o sucesso.</li>
-          <li>Você valoriza eficiência e quer estratégias que funcionem rapidamente.</li>
-        </ul>
-      </div>
-      <div class="audience-col negative">
-        <h4>Não é para você se</h4>
-        <ul>
-          <li>Você prefere crescimento "devagar e sempre" a aceleração estratégica.</li>
-          <li>Você tem medo de se destacar ou ser visto como "ambicioso demais".</li>
-          <li>Você quer sucesso, mas não está disposto a se esforçar intensamente.</li>
-          <li>Você acredita que "música é só arte" e negócios "estragam a pureza".</li>
-          <li>Você já domina seu mercado e não precisa acelerar mais.</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
+        .hero h1 span {
+            background: var(--gradient-maestro);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
 
-<!-- ═══════════════════════════════════════════════
-     OFERTA
-════════════════════════════════════════════════ -->
-<section class="offer" id="oferta">
-  <div class="container">
-    <div class="offer-box">
-      <div class="eyebrow">Para Dominantes</div>
-      <div class="title">MAESTRO PALCO</div>
-      <div class="price">R$397</div>
-      <div class="price-sub">Pagamento único · ROI garantido</div>
+        .hero .subtitle {
+            font-size: var(--text-body-xl);
+            color: rgba(255, 255, 255, 0.8);
+            margin-bottom: var(--space-8);
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.6;
+        }
 
-      <div class="includes">
-        <div class="includes-title">Arsenal completo</div>
-        <ul>
-          <li>23 aulas intensivas (aprox. 5 horas)</li>
-          <li>PDF "Plano de Dominância" (90 dias)</li>
-          <li>Arsenal de Estratégias Competitivas</li>
-          <li>Calculadora de Escalabilidade</li>
-          <li>50 Templates de Alto Impacto</li>
-          <li>Scripts de Automação</li>
-          <li>Acesso vitalício</li>
-        </ul>
-      </div>
+        /* Form Section */
+        .form-section {
+            background: var(--gradient-surface);
+            padding: var(--space-20) 0;
+            position: relative;
+            border-top: 1px solid var(--m-midnight-600);
+        }
 
-      <div class="urgency">
-        <div class="u-title">Acelere agora ou fique para trás</div>
-        <p>Enquanto você pondera, seus concorrentes estão agindo. Cada dia que você adia é terreno que você entrega para eles. Músicos dominantes decidem rápido e executam mais rápido ainda.</p>
-      </div>
+        .form-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--space-16);
+            align-items: center;
+        }
 
-      <p class="math">Vamos ser diretos: <strong>R$397 é o que você cobra por 1-2 apresentações.</strong> Se o sistema te ajuda a cobrar 3x mais e ter 5x mais demanda, se pagou na primeira semana.
-      <br><br>
-      <strong style="color: var(--m-gold-300);">Investimento único</strong> para dominância permanente.</p>
+        .form-content {
+            color: white;
+        }
 
-      <a href="https://chk.eduzz.com/Q9N2342Z01?utm_source=PV&utm_medium=link&utm_campaign=maestro+palco+dominante&utm_id=04+2026" class="btn-cta btn-cta-lg">ACELERAR carreira e DOMINAR mercado — R$397</a>
-      <p class="cta-sub">Acesso imediato · Resultados acelerados · Sem desculpas</p>
-    </div>
-  </div>
-</section>
+        .form-content h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: var(--text-h2);
+            font-weight: 700;
+            margin-bottom: var(--space-6);
+            line-height: 1.2;
+        }
 
-<!-- ═══════════════════════════════════════════════
-     FAQ
-════════════════════════════════════════════════ -->
-<section class="faq">
-  <div class="container">
-    <h2>Perguntas sobre aceleração</h2>
+        .form-content p {
+            font-size: var(--text-body-lg);
+            margin-bottom: var(--space-6);
+            opacity: 0.9;
+        }
 
-    <details>
-      <summary>90 dias é muito pouco tempo para dominar um mercado?</summary>
-      <div class="faq-body">
-        Não se você executar com intensidade e foco. O tempo não é o fator limitante — a qualidade da execução é. Em 90 dias você consegue se posicionar como líder, estabelecer autoridade e construir momentum. Músicos que "levam anos" geralmente estão desperdiçando tempo em atividades de baixo impacto.
-      </div>
-    </details>
+        .benefits {
+            list-style: none;
+            margin-bottom: var(--space-8);
+        }
 
-    <details>
-      <summary>Vou conseguir manter a qualidade artística sendo "agressivo" nos negócios?</summary>
-      <div class="faq-body">
-        Excelência artística e estratégia agressiva não são opostos — são complementares. Os maiores artistas da história foram estratégicos, competitivos e business-savvy. Beethoven, Miles Davis, Bowie. Ser dominante no mercado te dá MAIS recursos e liberdade para fazer arte de qualidade.
-      </div>
-    </details>
+        .benefits li {
+            padding: var(--space-4) 0;
+            position: relative;
+            padding-left: var(--space-8);
+            font-size: var(--text-body-lg);
+            opacity: 0.95;
+        }
 
-    <details>
-      <summary>E se eu não tiver o perfil "agressivo" naturalmente?</summary>
-      <div class="faq-body">
-        Agressividade em negócios não significa ser grosso ou antiético. Significa ser direto, eficiente e focado em resultados. São habilidades que se desenvolvem. Se você quer crescimento acelerado, você precisa estar disposto a desenvolver mentalidade e comportamentos de crescimento acelerado.
-      </div>
-    </details>
+        .benefits li::before {
+            content: '📊';
+            position: absolute;
+            left: 0;
+            color: var(--type-primary);
+            font-size: 20px;
+        }
 
-    <details>
-      <summary>Posso aplicar mesmo sendo músico em início de carreira?</summary>
-      <div class="faq-body">
-        Especialmente se você está começando. É muito mais fácil construir posicionamento dominante desde o início do que tentar "reconverter" uma carreira medíocre depois. Você tem a vantagem de começar com estratégias corretas desde o dia 1.
-      </div>
-    </details>
+        /* Form Styling */
+        .form-wrapper {
+            background: var(--gradient-card);
+            backdrop-filter: blur(20px);
+            border: 1px solid var(--m-midnight-600);
+            border-radius: 24px;
+            padding: var(--space-8);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+        }
 
-    <details>
-      <summary>Vou virar "aquele músico" que só pensa em dinheiro?</summary>
-      <div class="faq-body">
-        Você vai virar "aquele músico" que tem recursos para fazer a música que quer, quando quer, como quer. Dinheiro é ferramenta, não objetivo final. Mas sem essa ferramenta você fica limitado, dependente e frustrado. Músicos dominantes usam sucesso financeiro para ter liberdade artística total.
-      </div>
-    </details>
-  </div>
-</section>
+        .form-wrapper h3 {
+            color: white;
+            font-size: var(--text-h4);
+            font-weight: 600;
+            margin-bottom: var(--space-6);
+            text-align: center;
+        }
 
-<!-- ═══════════════════════════════════════════════
-     CTA FINAL
-════════════════════════════════════════════════ -->
-<section class="final-cta">
-  <div class="container">
-    <p class="anchor">Pare de assistir. Comece a DOMINAR.</p>
-    <p class="sub">Seu mercado está esperando um líder.</p>
-    <a href="https://chk.eduzz.com/Q9N2342Z01?utm_source=PV&utm_medium=link&utm_campaign=maestro+palco+dominante&utm_id=04+2026" class="btn-cta btn-cta-lg">DOMINAR meu mercado — MAESTRO PALCO R$397</a>
-    <p style="font-family: var(--font-mono); font-size: 12px; color: var(--m-slate-400); margin-top: var(--sp-5); letter-spacing: 0.1em; text-transform: uppercase;">
-      Acesso vitalício · Execução acelerada · Dominância garantida
-    </p>
-  </div>
-</section>
+        .email-reminder {
+            background: rgba(30, 64, 175, 0.1);
+            border: 1px solid rgba(30, 64, 175, 0.3);
+            border-radius: 12px;
+            padding: var(--space-4);
+            margin-bottom: var(--space-6);
+            color: white;
+            font-size: 14px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: var(--space-4);
+        }
 
-<!-- ═══════════════════════════════════════════════
-     FOOTER
-════════════════════════════════════════════════ -->
-<footer>
-  <div class="container">
-    <p>
-      EDILSON MORAIS — músico, co-produtor do Suzano Express<br>
-      ao lado de Marcos Suzano, criador do MAESTRO PALCO.
-    </p>
-    <p style="margin-top:16px;">
-      <a href="https://maestro-politica-privacidade.rota50ia.com" target="_blank" style="color:var(--muted);font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:1px;text-decoration:none;border-bottom:1px solid rgba(148,163,184,0.3);">Política de Privacidade</a>
-    </p>
-  </div>
-</footer>
+        .email-reminder::before {
+            content: '📧';
+            font-size: 18px;
+        }
 
+        /* ActiveCampaign Form Override */
+        ._form {
+            background: transparent !important;
+            padding: 0 !important;
+            border: none !important;
+            border-radius: 0 !important;
+            box-shadow: none !important;
+            max-width: 100% !important;
+            margin: 0 !important;
+        }
+
+        ._form-title {
+            display: none !important;
+        }
+
+        ._form-content {
+            color: rgba(255,255,255,0.8) !important;
+            font-size: 14px !important;
+            margin-bottom: var(--space-4) !important;
+            text-align: center !important;
+        }
+
+        ._form-label {
+            color: rgba(255,255,255,0.9) !important;
+            font-size: 14px !important;
+            font-weight: 600 !important;
+            margin-bottom: var(--space-4) !important;
+        }
+
+        ._field-wrapper input {
+            width: 100% !important;
+            background: rgba(255,255,255,0.08) !important;
+            border: 1px solid rgba(255,255,255,0.2) !important;
+            color: white !important;
+            padding: var(--space-4) !important;
+            border-radius: 12px !important;
+            font-size: var(--text-body-md) !important;
+            transition: all 0.3s ease !important;
+            margin-bottom: var(--space-4) !important;
+        }
+
+        ._field-wrapper input::placeholder {
+            color: rgba(255,255,255,0.5) !important;
+        }
+
+        ._field-wrapper input:focus {
+            outline: none !important;
+            border-color: var(--maestro-primary) !important;
+            box-shadow: 0 0 0 3px rgba(30, 64, 175, 0.2) !important;
+            background: rgba(255,255,255,0.1) !important;
+        }
+
+        ._submit {
+            width: 100% !important;
+            background: var(--gradient-maestro) !important;
+            color: white !important;
+            border: none !important;
+            border-radius: 12px !important;
+            padding: var(--space-6) !important;
+            font-size: var(--text-body-lg) !important;
+            font-weight: 700 !important;
+            letter-spacing: 0.5px !important;
+            text-transform: uppercase !important;
+            cursor: pointer !important;
+            transition: all 0.3s ease !important;
+            margin-top: var(--space-4) !important;
+            box-shadow: 0 8px 24px rgba(30, 64, 175, 0.3) !important;
+        }
+
+        ._submit:hover {
+            transform: translateY(-2px) !important;
+            box-shadow: 0 12px 32px rgba(30, 64, 175, 0.4) !important;
+        }
+
+        ._form-branding {
+            opacity: 0.3 !important;
+            margin-top: var(--space-6) !important;
+        }
+
+        .sms_consent_checkbox {
+            margin: var(--space-4) 0 !important;
+        }
+
+        .sms_consent_message {
+            color: rgba(255,255,255,0.6) !important;
+            font-size: 12px !important;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .form-container {
+                grid-template-columns: 1fr;
+                gap: var(--space-8);
+            }
+
+            .form-content {
+                text-align: center;
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .form-wrapper {
+                padding: var(--space-6);
+            }
+        }
+
+        /* Trust Elements */
+        .trust-bar {
+            background: var(--surface-secondary);
+            padding: var(--space-6) 0;
+            text-align: center;
+            border-top: 1px solid var(--m-midnight-600);
+        }
+
+        .trust-items {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: var(--space-8);
+            flex-wrap: wrap;
+        }
+
+        .trust-item {
+            display: flex;
+            align-items: center;
+            gap: var(--space-4);
+            color: var(--m-midnight-200);
+            font-size: 14px;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">MAESTRO <span>PALCO</span></div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="badge">TIPO C - ESTRATEGISTA</div>
+            <h1>Receba o <span>Sistema do Estrategista Musical</span></h1>
+            <p class="subtitle">Domine os dados e estratégias avançadas para criar um negócio musical de alta performance e resultados previsíveis</p>
+        </div>
+    </section>
+
+    <!-- Form Section -->
+    <section class="form-section">
+        <div class="container">
+            <div class="form-container">
+                <div class="form-content">
+                    <h2>📊 Para Músicos Estrategistas como Você</h2>
+                    <p>Seu teste DISC revelou que você tem o perfil de um Estrategista. Isso significa que você busca precisão, dados confiáveis e sistemas otimizados para resultados superiores.</p>
+                    
+                    <ul class="benefits">
+                        <li><strong>Analytics Musicais Avançados:</strong> KPIs e métricas para otimizar performance</li>
+                        <li><strong>Sistemas de Automação:</strong> Workflows inteligentes para máxima eficiência</li>
+                        <li><strong>Estratégias Data-Driven:</strong> Decisões baseadas em dados reais</li>
+                        <li><strong>Otimização de Processos:</strong> Eliminar gargalos e maximizar resultados</li>
+                        <li><strong>Previsibilidade de Receita:</strong> Modelos matemáticos para crescimento</li>
+                    </ul>
+                </div>
+
+                <div class="form-wrapper">
+                    <h3>Receba Seu Sistema Agora</h3>
+                    
+                    <div class="email-reminder">
+                        <strong>Importante:</strong> O ebook será enviado para o email que você cadastrar abaixo
+                    </div>
+
+                    <!-- Form Alto C inserido -->
+                    <form method="POST" action="https://edilsomdil79386.activehosted.com/proc.php" id="_form_9_" class="_form _form_9 _inline-form  _dark" novalidate data-styles-version="5">
+                        <input type="hidden" name="u" value="9" />
+                        <input type="hidden" name="f" value="9" />
+                        <input type="hidden" name="s" />
+                        <input type="hidden" name="c" value="0" />
+                        <input type="hidden" name="m" value="0" />
+                        <input type="hidden" name="act" value="sub" />
+                        <input type="hidden" name="v" value="2" />
+                        <input type="hidden" name="or" value="2dc0b71e-e671-4762-bedb-2ad5a811a75b" />
+                        
+                        <div class="_form-content">
+                            <div class="_form_element _field_name _full_width">
+                                <label for="fullname" class="_form-label">Nome completo</label>
+                                <div class="_field-wrapper">
+                                    <input type="text" id="fullname" name="fullname" placeholder="Como posso te chamar?" />
+                                </div>
+                            </div>
+                            
+                            <div class="_form_element _field_email _full_width">
+                                <label for="email" class="_form-label">Email <span style="color: #1E40AF;">*</span></label>
+                                <div class="_field-wrapper">
+                                    <input type="text" id="email" name="email" placeholder="Seu melhor email" required/>
+                                </div>
+                            </div>
+                            
+                            <div class="_form_element _x78101606 _full_width">
+                                <label for="phone" class="_form-label">WhatsApp <span style="color: #1E40AF;">*</span></label>
+                                <div class="_field-wrapper">
+                                    <input type="text" id="phone" name="phone" placeholder="(11) 99999-9999" required/>
+                                </div>
+                            </div>
+
+                            <label for="sms_consent" class="sms_consent_checkbox">
+                                <input type="checkbox" id="sms_consent" name="sms_consent" required />
+                                <div class="sms_consent_message">
+                                    Aceito receber conteúdos exclusivos sobre música profissional no WhatsApp informado.
+                                </div>
+                            </label>
+                            
+                            <div class="_button-wrapper _full_width">
+                                <button id="_form_9_submit" class="_submit" type="submit">
+                                    QUERO OTIMIZAR RESULTADOS
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="_form-thank-you" style="display:none;">
+                            <h3>📊 Excelente, Estrategista!</h3>
+                            <p>Seu Sistema do Estrategista Musical foi enviado para seu email. Verifique sua caixa de entrada em até 5 minutos.</p>
+                        </div>
+                        
+                        <div class="_form-branding">
+                            <div class="_marketing-by">Marketing por</div>
+                            <a href="https://www.activecampaign.com/" class="_logo">ActiveCampaign</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Bar -->
+    <section class="trust-bar">
+        <div class="container">
+            <div class="trust-items">
+                <div class="trust-item">
+                    <span>🔒</span> Seus dados estão seguros
+                </div>
+                <div class="trust-item">
+                    <span>📧</span> Sem spam, apenas conteúdo de valor
+                </div>
+                <div class="trust-item">
+                    <span>⚡</span> Entrega instantânea
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ActiveCampaign Form Script -->
+    <script>
+    window.cfields = [];
+    window._show_thank_you = function(id, message, trackcmp_url, email) {
+        var form = document.getElementById('_form_' + id + '_'), thank_you = form.querySelector('._form-thank-you');
+        form.querySelector('._form-content').style.display = 'none';
+        thank_you.innerHTML = thank_you.innerHTML;
+        thank_you.style.display = 'block';
+        if (typeof window._form_callback !== 'undefined') window._form_callback(id);
+    };
+
+    window._show_error = function(id, message, html) {
+        var form = document.getElementById('_form_' + id + '_'),
+            err = document.createElement('div'),
+            button = form.querySelector('button[type="submit"]'),
+            old_error = form.querySelector('._form_error');
+        if (old_error) old_error.parentNode.removeChild(old_error);
+        err.innerHTML = message;
+        err.className = '_error-inner _form_error _no_arrow';
+        var wrapper = document.createElement('div');
+        wrapper.className = '_form-inner _show_be_error';
+        wrapper.appendChild(err);
+        button.parentNode.insertBefore(wrapper, button);
+        button.disabled = false;
+        button.classList.remove('processing');
+    };
+
+    function validate_form() {
+        var email = document.getElementById('email').value;
+        var phone = document.getElementById('phone').value;
+        var consent = document.getElementById('sms_consent').checked;
+        
+        if (!email || !email.includes('@')) {
+            _show_error(9, "Por favor, insira um email válido");
+            return false;
+        }
+        
+        if (!phone) {
+            _show_error(9, "Por favor, insira seu WhatsApp");
+            return false;
+        }
+        
+        if (!consent) {
+            _show_error(9, "Por favor, aceite receber conteúdos exclusivos");
+            return false;
+        }
+        
+        return true;
+    }
+
+    document.getElementById('_form_9_').addEventListener('submit', function(e) {
+        e.preventDefault();
+        if (validate_form()) {
+            var button = document.getElementById('_form_9_submit');
+            button.disabled = true;
+            button.innerHTML = 'ENVIANDO...';
+            
+            // Simulate form submission
+            setTimeout(function() {
+                _show_thank_you(9);
+            }, 2000);
+        }
+    });
+    </script>
 </body>
 </html>
